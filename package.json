@@ -4,7 +4,7 @@
   "description": "A buggy graph consistency checker.",
   "main": "lib/api.js",
   "scripts": {
-    "test": "node node_modules/standard/bin/cmd.js src/**/*.js && babel src -d lib && node_modules/mocha/bin/mocha --compilers js:babel/register"
+    "test": "node node_modules/standard/bin/cmd.js src/**/*.js && babel src -d lib && node_modules/mocha/bin/mocha --compilers js:babel-register"
   },
   "author": "Maximilian Klein",
   "license": "MIT",
@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "@buggyorg/graphtools": "^0.2.6",
-    "graphlib": "^2.1.0"
+    "chai": "^3.5.0",
+    "graphlib": "^2.1.0",
+    "lodash": "^4.11.1"
   }
 }
