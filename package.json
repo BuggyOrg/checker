@@ -1,6 +1,6 @@
 {
   "name": "@buggyorg/checker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A buggy graph consistency checker.",
   "main": "lib/checker.js",
   "scripts": {
