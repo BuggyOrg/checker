@@ -1,4 +1,4 @@
-export function check (graph) {
+export function errors (graph) {
   var edges = graph.edges()
   var nodes = graph.nodes()
   var errorList = []
@@ -19,4 +19,13 @@ export function check (graph) {
   }
 
   return errorList
+}
+
+export function check (graph) {
+  var errs = errors(graph)
+  if (errs.length === 0) {
+    return graph
+  } else {
+    throw new Error(`Found problems while checking graph\n ${JSON.stringify(errs, null, 2)}`)
+  }
 }
