@@ -2,7 +2,7 @@
   "name": "@buggyorg/checker",
   "version": "0.1.1",
   "description": "A buggy graph consistency checker.",
-  "main": "lib/api.js",
+  "main": "lib/checker.js",
   "scripts": {
     "test": "node node_modules/standard/bin/cmd.js src/**/*.js && node_modules/mocha/bin/mocha --compilers js:babel-register",
     "prepublish": "babel src -d lib",
